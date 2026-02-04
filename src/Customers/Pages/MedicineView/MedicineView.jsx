@@ -51,16 +51,13 @@ const MedicineView = () => {
         <span className={style.Category}>{medicine.categoryId ?.categoryName || "Unknown"}</span>
         <span className={style.Category}>{medicine.typeId ?.typeName || "Unknown"}</span>
       </div>
-
-      <div className={style.Price}>
+     <div className={style.Price}>
        {medicine.medicinePrice} <span>/ strip</span>
       </div>
-
       <p className={style.Description}>
             {medicine.medicineDistription}
       </p>
-
-      <div className={style.Actions}>
+        <div className={style.Actions}>
         <button className={style.AddToCart} onClick={addToCart}>Add to Cart</button>
         <button className={style.BuyNow}>Buy Now</button>
       </div>
@@ -68,10 +65,6 @@ const MedicineView = () => {
 
   </div>
 </div>
-
-
-
-
   )
 }
 
